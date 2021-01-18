@@ -37,5 +37,5 @@ def plus():
     current = cursor.fetchone()[0] + 1
     cursor.execute(f'UPDATE increment SET icount = {current}')
     conn.commit()
-    html = f"<h3>Количество: {current}</h3>"
+    html = f"<h3>Quantity: {current}</h3>"
     return html
