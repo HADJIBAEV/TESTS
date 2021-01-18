@@ -17,7 +17,7 @@ def hello():
     except Exception as e:
         print('DB already created')
 
-    html = "<h3>Привет!</h3>" \
+    html = "<h3>Hello guys.</h3>" \
            "<b>Hostname:</b> {hostname}<br/>"
     return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname())
 
